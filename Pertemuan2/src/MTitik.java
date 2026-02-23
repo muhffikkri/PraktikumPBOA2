@@ -6,7 +6,7 @@
 
 public class MTitik {
     public static void main(String[] args) {
-        Titik T1 = new Titik(); // membuat objek titik T1 (0,0)
+        // Titik T1 = new Titik(); // membuat objek titik T1 (0,0)
         // T1.setAbsis(3); // mengubah absis T1 dengan nilai 3
         // T1.setOrdinat(4); // mengubah ordinat T1 dengan nilai 4
         // T1.printTitik(); // mencetak koordinat T1 ke layar
@@ -20,6 +20,12 @@ public class MTitik {
         // T2.printTitik();
 
         Titik T2 = new Titik(3,5);
+
+        T2.printTitik();
+
+        T2.refleksiX();
+
+        T2.printTitik();
         
         System.out.println("Jumlah Objek Titik = " + Titik.getCounterTitik());
     }

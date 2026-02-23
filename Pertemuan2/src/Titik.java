@@ -28,7 +28,6 @@ public class Titik {
     }
     
     // mengembalikan nilai ordinat
-
     double getOrdinat() {
         return ordinat;
     }
@@ -42,6 +41,7 @@ public class Titik {
         absis = x;
     }
 
+    // mengeset ordinat titik dengan nilai baru y
     void setOrdinat(double y) {
         ordinat = y;
     }
@@ -55,5 +55,63 @@ public class Titik {
     // mencetak koordinat titik
     void printTitik() {
         System.out.println("Titik (" + absis + "," + ordinat + ")");
+    }
+
+    // menghasilkan kuadran dari titik
+    int getKuadran() {
+        if (absis == 0 || ordinat == 0) {
+            return 0;
+        }
+        
+        if (absis > 0) {
+            if (ordinat > 0) {
+                return 1;
+            } else {
+                return 2;
+            }
+        } else {
+            if (ordinat > 0) {
+                return 3;
+            } else {
+                return 4;
+            }            
+        }
+    }
+
+    // menghasilkan jarak titik terhadap titik pusat
+    double getJarakPusat() {
+        return Math.sqrt(Math.pow(absis, 2) + Math.pow(ordinat, 2));
+    }
+
+    // menghasilkan jarak titik terhadap titik tertentu
+    double getJarak(Titik T) {
+
+        return Math.sqrt(Math.pow(absis - T.getAbsis(), 2) + Math.pow(ordinat - T.getOrdinat(), 2));
+    }
+
+    // Merefleksikan titik terhadap sumbu X
+    void refleksiX() {
+        ordinat = ordinat * -1; 
+    }
+
+    // Merefleksikan titik terhadap sumbu Y
+    void refleksiY() {
+        absis = absis * -1;
+    }
+
+    // Mengembalikan titik hasil refleksi terhadap sumbu X
+    Titik getRefleksiX() {
+        Titik res = new Titik();
+        res.refleksiX();
+
+        return res;
+    }
+
+    // Mengembalikan titik hasil refleksi terhadap sumbu T
+    Titik getRefleksiY() {
+        Titik res = new Titik();
+        res.refleksiY();
+
+        return res;
     }
 }
