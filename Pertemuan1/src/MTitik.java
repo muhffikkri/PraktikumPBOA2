@@ -1,3 +1,9 @@
+/* Nama File    : MTitik.java
+ * Deskripsi    : berisi penggunaan atribut dan method dalam clans Titik
+ * Pembuat      : Muhammad Fikri / 24060124130069
+ * Tanggal      : 17 Februari 2026
+ */
+
 public class MTitik {
     public static void main(String[] args) {
         Titik T1 = new Titik(); // membuat objek titik T1 (0,0)

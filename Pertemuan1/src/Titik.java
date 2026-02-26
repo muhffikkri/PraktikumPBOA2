@@ -1,7 +1,7 @@
 /* Nama File    : Titik.java
  * Deskripsi    : berisi atribut dan method dalam clans Titik
- * Pembuat      :
- * Tanggal      :
+ * Pembuat      : Muhammad Fikri / 24060124130069
+ * Tanggal      : 17 Februari 2026
  */
 
 
