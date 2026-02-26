@@ -1,7 +1,7 @@
 /* Nama File    : Titik.java
  * Deskripsi    : berisi atribut dan method dalam clans Titik
- * Pembuat      :
- * Tanggal      :
+ * Pembuat      : Muhammad Fikri / 24060124130069
+ * Tanggal      : 23 Februari 2026
  */
 
 
@@ -67,13 +67,13 @@ public class Titik {
             if (ordinat > 0) {
                 return 1;
             } else {
-                return 2;
+                return 4;
             }
         } else {
             if (ordinat > 0) {
-                return 3;
+                return 2;
             } else {
-                return 4;
+                return 3;
             }            
         }
     }
@@ -101,15 +101,15 @@ public class Titik {
 
     // Mengembalikan titik hasil refleksi terhadap sumbu X
     Titik getRefleksiX() {
-        Titik res = new Titik();
+        Titik res = new Titik(getAbsis(), getOrdinat());
         res.refleksiX();
 
         return res;
     }
 
-    // Mengembalikan titik hasil refleksi terhadap sumbu T
+    // Mengembalikan titik hasil refleksi terhadap sumbu Y
     Titik getRefleksiY() {
-        Titik res = new Titik();
+        Titik res = new Titik(getAbsis(), getOrdinat());
         res.refleksiY();
 
         return res;
