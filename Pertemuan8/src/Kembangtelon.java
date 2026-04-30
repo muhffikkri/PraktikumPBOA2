@@ -1,0 +1,25 @@
+/* Nama File    : Kembangtelon.java
+ * Deskripsi    : Kelas turunan Kucing (Kembangtelon).
+ * Pembuat      : Muhammad Fikri / 24060124130069
+ * Tanggal      : 30 April 2026
+ */
+
+public class Kembangtelon extends Kucing {
+    public Kembangtelon() {
+        super();
+    }
+
+    public Kembangtelon(String Nama, double bobot) {
+        super(Nama, bobot);
+    }
+
+    @Override
+    public void Gerak() {
+        super.Gerak();
+    }
+
+    @Override
+    public void Bersuara() {
+        super.Bersuara();
+    }
+}
