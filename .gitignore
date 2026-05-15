@@ -30,3 +30,5 @@ replay_pid*
 # End of https://www.toptal.com/developers/gitignore/api/java
 
 .qodo
+/Pertemuan10/target/
+/jdbc_mhs_service/target/
